@@ -19,6 +19,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
+# Static Folder
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'na1g=tws!9)m^2#o3zn&8zk^k25_0n33hh3h9txdnfhwgf1s(t'
 
@@ -37,6 +40,10 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    'Profiles',
+
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
