@@ -7,6 +7,7 @@
 4. If new dependencies are installed, freeze it into requiements.txt file
 
 ## Sites and Articles
+https://www.tfzx.net/article/5782861.html
 
 ### My Cheatsheet
 python manage.py migrate --run-syncdb (After changing user model)
