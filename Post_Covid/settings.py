@@ -19,16 +19,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# Static Folder
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'na1g=tws!9)m^2#o3zn&8zk^k25_0n33hh3h9txdnfhwgf1s(t'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['post-covid-api.herokuapp.com','127.0.0.1:8000]
+ALLOWED_HOSTS = ['post-covid-api.herokuapp.com','127.0.0.1:8000']
 
 
 # Application definition
@@ -132,15 +129,16 @@ USE_L10N = True
 USE_TZ = True
 
 
+# Static Folder
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
 
 # Extra places for collectstatic to find static files.
-STATICFILES_DIRS = (
-    os.path.join(PROJECT_ROOT, 'static'),
-)
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static'),]
 
 # Custom User Model
 AUTH_USER_MODEL = "Profiles.CustomUser"
