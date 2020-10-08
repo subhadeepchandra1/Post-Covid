@@ -11,3 +11,5 @@ https://www.tfzx.net/article/5782861.html
 
 ### My Cheatsheet
 python manage.py migrate --run-syncdb (After changing user model)
+
+python manage.py collectstatic
