@@ -9,8 +9,13 @@
 ## Development Cycle
 1. Set Debug = False before deployment
 
-## Sites and Articles
+## Reference Sites and Articles
 https://www.tfzx.net/article/5782861.html
+
+## API Endpoints
+rest-auth/registration/
+
+rest-auth/login/
 
 ### My Cheatsheet
 python manage.py migrate --run-syncdb (After changing user model)
