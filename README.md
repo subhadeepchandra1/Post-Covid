@@ -17,6 +17,10 @@ rest-auth/registration/
 
 rest-auth/login/
 
+## Common superuser
+username: batch2
+password: iwannab
+
 ### My Cheatsheet
 python manage.py migrate --run-syncdb (After changing user model)
 
