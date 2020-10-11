@@ -9,6 +9,9 @@
 ## Development Cycle
 1. Set Debug = False before deployment
 
+## To Do
+1. Whitelist only main webapp in CORS
+
 ## Reference Sites and Articles
 https://www.tfzx.net/article/5782861.html
 
