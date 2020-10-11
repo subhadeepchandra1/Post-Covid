@@ -48,9 +48,13 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     'rest_auth.registration',
+
+    'corsheaders',
 ]
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+
     'django.middleware.security.SecurityMiddleware',
     
     'whitenoise.middleware.WhiteNoiseMiddleware',
@@ -157,3 +161,11 @@ REST_AUTH_REGISTER_SERIALIZERS = {
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 ACCOUNT_ADAPTER = 'Profiles.adapter.CustomAccountAdapter'
+
+# Cross Origin Resource sharing
+'''CORS_ORIGIN_ALLOW_ALL = False
+CORS_ORIGIN_WHITELIST = (
+       'http://localhost:3000',
+)'''
+
+CORS_ORIGIN_ALLOW_ALL = True
