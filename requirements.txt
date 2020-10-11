@@ -5,6 +5,7 @@ defusedxml==0.6.0
 Django==3.1.2
 django-allauth==0.42.0
 django-appconf==1.0.4
+django-cors-headers==3.5.0
 django-rest-auth==0.9.5
 django-user-accounts==3.0.2
 djangorestframework==3.12.1
