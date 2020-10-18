@@ -30,3 +30,12 @@ class UserDetailView(generics.RetrieveAPIView):
         queryset = self.filter_queryset(self.get_queryset())
         obj = get_object_or_404(queryset, email=self.request.user.email)
         return obj
+
+@api_view(['GET'])
+def current_user(request):
+    """
+    Determine the current user by their token, and return their data
+    """
+    
+    serializer = UserDetailSerializer(request.user)
+    return Response(serializer.data)
