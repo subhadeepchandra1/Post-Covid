@@ -15,6 +15,8 @@
 ## Reference Sites and Articles
 https://www.tfzx.net/article/5782861.html
 
+https://github.com/adamchainz/django-cors-headers
+
 ## API Endpoints
 rest-auth/registration/
 
