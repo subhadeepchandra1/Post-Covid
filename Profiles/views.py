@@ -21,9 +21,9 @@ class AuthView(APIView):
         }
         return Response(content)
 
-class UserDetailView(generics.RetrieveUpdateAPIView):
+class UserDetailView(generics.RetrieveAPIView):
     serializer_class = UserDetailSerializer
-    permission_classes = (IsAuthenticated,)
+    permission_classes = [IsAuthenticated]
     queryset = CustomUser.objects.all()
 
     def get_object(self):
