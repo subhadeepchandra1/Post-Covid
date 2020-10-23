@@ -15,6 +15,8 @@
 ## Reference Sites and Articles
 https://www.tfzx.net/article/5782861.html
 
+https://jpadilla.github.io/django-rest-framework-jwt/
+
 https://github.com/adamchainz/django-cors-headers
 
 ## API Endpoints
