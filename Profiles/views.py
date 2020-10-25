@@ -51,8 +51,13 @@ def notify(request):
     serializer = UserDetailSerializer(request.user)
 
     if(serializer.data['timer_active']):
-        remind = ( datetime.strptime(serializer.data['timer_last_active'], '%Y-%m-%dT%H:%M:%S.%fZ').time() 
-        - datetime.now() ).total_seconds() / 60 > 30
+        remind = ( datetime.now() - datetime.strptime(serializer.data['timer_last_active'], '%Y-%m-%dT%H:%M:%S.%fZ') ).total_seconds() / 60 > 1
+
+        if(remind):
+            user = request.user
+            user.timer_last_active = datetime.now()
+            user.save()
+        
         return Response({'remind': remind})
 
     return Response({'remind': remind})
