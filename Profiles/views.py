@@ -5,10 +5,14 @@ from rest_framework.views import APIView
 from rest_framework import generics, permissions, status, viewsets
 from rest_framework.decorators import api_view, permission_classes
 from django.shortcuts import get_object_or_404
+from datetime import datetime, timezone
 
 from .models import *
 
 from .serializers import *
+
+# time delta
+td = 30
 
 class AuthView(APIView):
     authentication_classes = [SessionAuthentication, BasicAuthentication]
@@ -39,3 +43,37 @@ def current_user(request):
     
     serializer = UserDetailSerializer(request.user)
     return Response(serializer.data)
+
+@api_view(['GET'])
+def notify(request):
+
+    remind = False
+    serializer = UserDetailSerializer(request.user)
+
+    if(serializer.data['timer_active']):
+        remind = ( datetime.strptime(serializer.data['timer_last_active'], '%Y-%m-%dT%H:%M:%S.%fZ').time() 
+        - datetime.now() ).total_seconds() / 60 > 30
+        return Response({'remind': remind})
+
+    return Response({'remind': remind})
+
+@api_view(['GET'])
+def activate_reminder(request):
+    user = request.user
+    user.timer_active = True
+    user.timer_last_active = datetime.now()
+    user.save()
+
+    serializer = UserDetailSerializer(request.user)
+
+    return Response(serializer.data, status=status.HTTP_200_OK)
+
+@api_view(['GET'])
+def deactivate_reminder(request):
+    user = request.user
+    user.timer_active = False
+    user.save()
+
+    serializer = UserDetailSerializer(request.user)
+
+    return Response(serializer.data, status=status.HTTP_200_OK)
