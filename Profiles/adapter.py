@@ -9,5 +9,7 @@ class CustomAccountAdapter(DefaultAccountAdapter):
         user.first_name = data.get('first_name')
         user.last_name = data.get('last_name')
         user.employment = data.get('employment')
+        user.employment = data.get('timer_active')
+        user.employment = data.get('timer_last_active')
         user.save()
         return user
