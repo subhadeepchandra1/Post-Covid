@@ -19,6 +19,8 @@ https://jpadilla.github.io/django-rest-framework-jwt/
 
 https://github.com/adamchainz/django-cors-headers
 
+https://www.pyimagesearch.com/2015/05/11/creating-a-face-detection-api-with-python-and-opencv-in-just-5-minutes/ ( Deploying ML model )
+
 ## API Endpoints
 rest-auth/registration/
 
