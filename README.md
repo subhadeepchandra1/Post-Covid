@@ -9,6 +9,11 @@
 ## Development Cycle
 1. Set Debug = False before deployment
 
+## Prerequisites
+1. JWT Authentication
+2. CORS
+3. Git Large File Storage
+
 ## To Do
 1. Whitelist only main webapp in CORS
 

@@ -26,7 +26,7 @@ SECRET_KEY = 'na1g=tws!9)m^2#o3zn&8zk^k25_0n33hh3h9txdnfhwgf1s(t'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['post-covid-api.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['post-covid-api.herokuapp.com','127.0.0.1','localhost']
 
 
 # Application definition
