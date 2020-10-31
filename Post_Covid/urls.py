@@ -28,5 +28,8 @@ urlpatterns = [
     path('api-token-auth/', obtain_auth_token, name='api_token_auth'),
 
     path('', include('Profiles.urls')),
+<<<<<<< HEAD
     path('', include('Social_Distance.urls')),
+=======
+>>>>>>> 1bff0b3c851709a031faa42116d7f8afb8d6269b
 ]
