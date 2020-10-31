@@ -16,6 +16,7 @@ def run_social(request):
     if request.method == "POST":
         if request.FILES.get("image", None) is not None:
             image = _grab_image(stream=request.FILES["image"])
+            return JsonResponse(data)
             data['success'] = ml_model.test(image)
 
     # return a JSON response
