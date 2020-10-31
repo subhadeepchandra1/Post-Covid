@@ -39,3 +39,5 @@ password: iwannab
 python manage.py migrate --run-syncdb (After changing user model)
 
 python manage.py collectstatic
+
+git reset HEAD~1 ( Revert commit )
