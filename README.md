@@ -9,11 +9,22 @@
 ## Development Cycle
 1. Set Debug = False before deployment
 
+## Prerequisites
+1. JWT Authentication
+2. CORS
+3. Git Large File Storage
+
 ## To Do
 1. Whitelist only main webapp in CORS
 
 ## Reference Sites and Articles
 https://www.tfzx.net/article/5782861.html
+
+https://jpadilla.github.io/django-rest-framework-jwt/
+
+https://github.com/adamchainz/django-cors-headers
+
+https://www.pyimagesearch.com/2015/05/11/creating-a-face-detection-api-with-python-and-opencv-in-just-5-minutes/ ( Deploying ML model )
 
 ## API Endpoints
 rest-auth/registration/

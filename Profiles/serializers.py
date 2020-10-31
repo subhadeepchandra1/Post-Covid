@@ -5,9 +5,10 @@ from allauth.account.utils import setup_user_email
 
 from rest_auth.registration.serializers import RegisterSerializer
 
+from Profiles.models import *
+
 
 class CustomRegisterSerializer(RegisterSerializer):
-
     first_name = serializers.CharField(required=True,max_length=50,)
     last_name = serializers.CharField(required=True,max_length=50,)
     employment = serializers.CharField(required=True,max_length=20,)
@@ -18,3 +19,11 @@ class CustomRegisterSerializer(RegisterSerializer):
         data_dict['last_name'] = self.validated_data.get('last_name', '')
         data_dict['employment'] = self.validated_data.get('employment', '')
         return data_dict
+
+class UserDetailSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = CustomUser
+        fields = '__all__'
+        read_only_fields = ('email', 'username', 'admin', 'active', 'staff', 
+                            'password', 'last_login')
+    
