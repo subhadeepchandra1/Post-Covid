@@ -3,5 +3,3 @@
 .venv
 env/
 venv/
-
-yolov3.weights
