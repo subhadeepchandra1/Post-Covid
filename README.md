@@ -26,14 +26,25 @@ https://github.com/adamchainz/django-cors-headers
 
 https://www.pyimagesearch.com/2015/05/11/creating-a-face-detection-api-with-python-and-opencv-in-just-5-minutes/ ( Deploying ML model )
 
+https://dev.to/iamjcoo/opencv-python-on-deploying-heroku-3lb4 ( Deploying opencv )
+
 ## API Endpoints
-rest-auth/registration/
-
-rest-auth/login/
-
-## Common superuser
-username: batch2
-password: iwannab
+admin/
+^rest-auth/
+^rest-auth/registration/
+api-token-auth/
+api/auth/
+api/user-detail/
+api/current-user/
+token-auth/
+api-token-refresh/
+api-token-verify/
+api/get-notification/
+api/activate-reminder/
+api/deactivate-reminder/
+api/activate-social/
+api/deactivate-social/
+api/run-social/
 
 ### My Cheatsheet
 python manage.py migrate --run-syncdb (After changing user model)
