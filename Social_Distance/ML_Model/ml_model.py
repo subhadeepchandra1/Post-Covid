@@ -18,11 +18,11 @@ def test(frame):
 	weightsPath = os.path.sep.join([config.MODEL_PATH, "yolov3.weights"])
 	configPath = os.path.sep.join([config.MODEL_PATH, "yolov3.cfg"])
 
-	return True
-
 	# load our YOLO object detector trained on COCO dataset (80 classes)
 	print("[INFO] loading YOLO from disk...")
 	net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
+
+	return True
 
 	# check if we are going to use GPU
 	if config.USE_GPU:
