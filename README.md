@@ -30,20 +30,35 @@ https://dev.to/iamjcoo/opencv-python-on-deploying-heroku-3lb4 ( Deploying opencv
 
 ## API Endpoints
 admin/
+
 ^rest-auth/
+
 ^rest-auth/registration/
+
 api-token-auth/
+
 api/auth/
+
 api/user-detail/
+
 api/current-user/
+
 token-auth/
+
 api-token-refresh/
+
 api-token-verify/
+
 api/get-notification/
+
 api/activate-reminder/
+
 api/deactivate-reminder/
+
 api/activate-social/
+
 api/deactivate-social/
+
 api/run-social/
 
 ### My Cheatsheet
