@@ -31,6 +31,8 @@ https://dev.to/iamjcoo/opencv-python-on-deploying-heroku-3lb4 ( Deploying opencv
 
 https://elements.heroku.com/buildpacks/bureauxlocaux/heroku-buildpack-git-lfs ( Heroku lfs buildpack setup )
 
+https://stackoverflow.com/questions/22147574/fatal-could-not-read-username-for-https-github-com-no-such-file-or-directo
+
 ## API Endpoints
 ^rest-auth/
 
