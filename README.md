@@ -29,6 +29,8 @@ https://www.pyimagesearch.com/2015/05/11/creating-a-face-detection-api-with-pyth
 
 https://dev.to/iamjcoo/opencv-python-on-deploying-heroku-3lb4 ( Deploying opencv )
 
+https://elements.heroku.com/buildpacks/bureauxlocaux/heroku-buildpack-git-lfs ( Heroku lfs buildpack setup )
+
 ## API Endpoints
 ^rest-auth/
 
