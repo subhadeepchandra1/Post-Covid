@@ -6,9 +6,6 @@
 3. Install dependencies by the command (pip install -r requiements.txt)
 4. If new dependencies are installed, freeze it into requiements.txt file
 
-## Development Cycle
-1. Set Debug = False before deployment
-
 ## Prerequisites
 1. JWT Authentication
 2. CORS
