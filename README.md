@@ -13,6 +13,7 @@
 1. JWT Authentication
 2. CORS
 3. Git Large File Storage
+4. HEROKU_BUILDPACK_GIT_LFS_REPO
 
 ## To Do
 1. Whitelist only main webapp in CORS
@@ -29,8 +30,6 @@ https://www.pyimagesearch.com/2015/05/11/creating-a-face-detection-api-with-pyth
 https://dev.to/iamjcoo/opencv-python-on-deploying-heroku-3lb4 ( Deploying opencv )
 
 ## API Endpoints
-admin/
-
 ^rest-auth/
 
 ^rest-auth/registration/
