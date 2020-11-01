@@ -22,8 +22,6 @@ def test(frame):
 	print("[INFO] loading YOLO from disk...")
 	net = cv2.dnn.readNetFromDarknet(configPath, weightsPath)
 
-	return True
-
 	# check if we are going to use GPU
 	if config.USE_GPU:
 		# set CUDA as the preferable backend and target
